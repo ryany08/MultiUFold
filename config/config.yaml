@@ -1,0 +1,17 @@
+batch_size: 2
+num_workers: 0   # 对于Windows用户，这里应设置为0，否则会出现多线程错误, the number of thread needed to read data
+learning_rate: 0.0001
+weight_decay: 0.01
+drop_out: 0.05
+epochs: 30
+seq_channels: 256
+pairwise_channels: 256
+n_folds: 4
+n_attention_layers: 6
+max_length: 512
+min_distance: 4
+head_num: 16
+
+
+gpu_id: 0
+input_dir: "data"
